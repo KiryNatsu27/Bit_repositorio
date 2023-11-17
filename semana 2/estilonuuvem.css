@@ -1,0 +1,239 @@
+:root{
+    --color-azul: #151d27; 
+    --color-blanco: #fff; 
+    --color-azul-2: #263241; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.composicionlogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.barra{
+    background: var(--color-azul);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.composicionlogo :nth-child(2) {
+    width: 40px;
+}
+
+.composicionlogo :nth-child(3) {
+    width: 130px;
+    margin-left: 15px;
+}
+
+.btnNav{
+    background-color: transparent;
+    border: none;
+    color: var(--color-blanco);
+    font-size: 16px;
+    white-space: nowrap;
+    height: 80px;
+    padding: 0 20px;
+    font-family: 'Open Sans', sans-serif;
+    border-top: 3px solid transparent;
+    transition: all .5s;
+}
+
+.flexNav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.posicionIcono1{
+    transform: rotate(90deg);
+    margin-right: 5px;
+}
+
+.posicionIcono2{
+    margin-right: 5px;
+}
+
+.busqueda{
+    background: var(--color-azul-2);
+    height: 40px;
+    border: none;
+    width: 370px;
+}
+
+.busqueda::placeholder {
+    color: #b4b2b2;
+    font-style: italic;
+}
+
+.lupaRelativa {
+    position: relative;
+    width: 16px;
+    height: 16px;
+}
+
+.lupa {
+    position: absolute;
+    color: #b4b2b2; 
+    left: -25px;
+}
+
+.posicionIcono3{
+    color: var(--color-blanco);
+    margin-right: 5px;
+    font-size: .8rem;
+}
+
+.menuHamburguesa{
+    color: var(--color-blanco);
+    margin-right: 15px;
+    font-size: 1.2rem;
+    display: none;
+}
+
+.ejemplo1{
+    width: 200px;
+    height: 200px;
+    background-color: #00ffff;
+}
+
+.lupaResponsive{
+    display: none;
+}
+
+@media (max-width: 1280px) {
+    .menuHamburguesa {
+        display: block;
+    }
+    .flexNav {
+        display: none;
+    }
+    .fixresponsive {
+        display: block;
+    }
+    .lupaResponsive {
+        display: block;
+    }
+    .barra {
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+    .btnConectar {
+        display: none;
+    }
+}
+
+.btnOferta:hover {
+    border: 3px solid #dba910;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+}
+
+.btnOferta:hover i.posicionIcono1 {
+    color: #dba910;
+}
+
+.btnOferta:hover i.flecha,
+.btnJuegos:hover i.flecha {
+    transform: rotate(180deg);
+}
+
+.btnJuegos:hover {
+    border: 3px solid #8a10db;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+}
+
+.btnJuegos:hover i.posicionIcono2 {
+    color: #8a10db;
+}
+
+@media (min-width: 769px) and (max-width: 1000px) {
+    .ejemplo1 {
+        background-color: #1e00ff;
+    }
+}
+
+
+/* ~ Slider */
+
+.sliderContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cuadricula {
+    display: grid;
+    grid-template-columns: 52px 700px 345px 52px;
+    /* grid-auto-rows: 100px; */
+}
+
+.Scroll{
+    font-size: 15px;
+}
+
+.Scroll1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row: 1/3;
+
+}
+.imaPrincipal {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+}
+
+.imgSecundaria1 {
+    grid-column: 3/ 4;
+}
+
+.imgSecundaria2 {
+    grid-column: 3/ 4;
+}
+
+.imgSlider {
+    width: 100%;
+    height: 100%;
+}
+
+.Scroll2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 4/ 5;
+    grid-row: 1/ 3;
+}
+
+@media (max-width: 1280px) {
+    .imgSecundaria1,
+    .imgSecundaria2 {
+        display: none;
+    }
+    .imaPrincipal {
+        grid-column: 1 / 3;
+    }
+}
+
+.Juegosf{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+
+.Gamesflex{
+    display: flex;
+    flex-direction: column;
+}
+
+.Juegosflex{
+    display: flex;
+    flex-direction: row;
+}

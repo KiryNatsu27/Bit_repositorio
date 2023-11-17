@@ -1,0 +1,32 @@
+:root {
+    --amarillo-pollito: #ffe812;
+}
+
+.btn-exito {
+    background-color: var(--amarillo-pollito);
+    height: 22px;
+    font-size: 1rem;
+    min-width: none;
+}
+
+.Iexito{
+    width: 80px;
+}
+
+@media (min-width: 992px) {
+    .textoHeader {
+        padding-left: 170px;
+    }
+}
+
+.bg-amarillo {
+    background-color: var(--amarillo-pollito);
+}
+
+.barraE{
+    width: 500px;
+    border-radius: 10px;
+    border: none;
+    height: 36px;
+    box-shadow: 0 2px 6px rgba(0,0,0,.16);
+}
